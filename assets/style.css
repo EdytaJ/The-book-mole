@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Walter+Turncoat&display=swap');
+
+body {
+    font-family: Ubuntu, sans-serif;
+    color: black;
+    font-weight: 400;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #CCB9A1;
+}
+/* logo and headings */
+
+h1 {
+ font-family: Walter Turncoat, sans-serif;
+ letter-spacing: 3px;
+ color: black;
+ font-size: 70px;
+}
+
+.hero-image {
+    max-width: 100%;
+    width: 1500px;
+    margin: 0;
+    padding: 0;
+   }
