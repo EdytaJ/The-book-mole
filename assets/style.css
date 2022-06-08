@@ -24,3 +24,17 @@ h1 {
     margin: 0;
     padding: 0;
    }
+
+
+
+   .books {
+    float: left;
+    padding: 0 20px 20px 0;
+   
+   
+   }
+
+   p {
+       float: left;
+       line-height: 190%;
+   }
