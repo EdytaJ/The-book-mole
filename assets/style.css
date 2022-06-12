@@ -25,7 +25,56 @@ h1 {
     padding: 0;
    }
 
+   /*navigation*/
 
+   #slide-back {
+       width: 10%;
+       height: 30%;
+       background-color: white;
+       position: fixed;
+       top: 0;
+       left: 0;
+       font-size: 33px;   
+
+    nav {
+        padding: 10px 34px;
+
+        a {
+            display: block;
+            margin-bottom: 25px;
+            text-decoration: none;
+            color: aqua;
+
+        }
+    }   
+   }
+
+   #tilt-window {
+       height: 50vh;
+       width: 50vh;
+       position: relative;
+       overflow-x: hidden;
+       overflow-y: scroll;
+       z-index: 2;
+
+       &.tilt {
+           overflow: hidden;
+           pointer-events: none;
+           #tilt-front {
+               transform: rotate(10deg) translateZ(0);}
+           }
+       }
+
+       /* to rotate*/
+       #tilt-front {
+           pointer-events: auto;
+           position: relative;
+           z-index: 3;
+           background-color: red;
+           box-shadow: 0 0 20px rgba(black, 0.7);
+           transform-origin: center 70%;
+           transition: all 0.3s ease;
+       }
 
    .books {
     float: left;
