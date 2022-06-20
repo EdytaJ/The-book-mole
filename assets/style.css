@@ -2,88 +2,87 @@
 
 body {
     font-family: Ubuntu, sans-serif;
-    color: black;
     font-weight: 400;
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: #CCB9A1;
+    box-sizing: border-box;
+   
 }
 /* logo and headings */
 
-h1 {
- font-family: Walter Turncoat, sans-serif;
- letter-spacing: 3px;
- color: black;
- font-size: 70px;
-}
-
-.hero-image {
-    max-width: 100%;
-    width: 1500px;
-    margin: 0;
-    padding: 0;
-   }
 
    /*navigation*/
 
-   #slide-back {
-       width: 10%;
-       height: 30%;
-       background-color: white;
-       position: fixed;
-       top: 0;
-       left: 0;
-       font-size: 33px;   
+ .menu-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: (-50%, -50%);
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    nav {
-        padding: 10px 34px;
+ }
 
-        a {
-            display: block;
-            margin-bottom: 25px;
-            text-decoration: none;
-            color: aqua;
+ .button {
+    position: relative;
+    background: red;
+    color: azure;
+    font-size: 20px;
+    padding: 8px 20px;
+    width: 150px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: width .4s;
+ }
 
-        }
-    }   
-   }
+ /* .button:hover {
+    width: 100%;
+ } */
 
-   #tilt-window {
-       height: 50vh;
-       width: 50vh;
-       position: relative;
-       overflow-x: hidden;
-       overflow-y: scroll;
-       z-index: 2;
+ .fas:hover:before {
+    content: '\f00d';
+ }
 
-       &.tilt {
-           overflow: hidden;
-           pointer-events: none;
-           #tilt-front {
-               transform: rotate(10deg) translateZ(0);}
-           }
-       }
+ ul {
+    list-style: none;
+    position: absolute;
+    display: block;
+    background: beige;
+    width: 100%;
+    text-align: center;
+    border-radius: 2%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    top: 65px;
+    padding-left: 0;
+ }
 
-       /* to rotate*/
-       #tilt-front {
-           pointer-events: auto;
-           position: relative;
-           z-index: 3;
-           background-color: red;
-           box-shadow: 0 0 20px rgba(black, 0.7);
-           transform-origin: center 70%;
-           transition: all 0.3s ease;
-       }
+ ul li {
+    line-height: 35px;
+    padding: 8px 20px;
+    border-bottom: 1px solid gray;
+ }
 
-   .books {
-    float: left;
-    padding: 0 20px 20px 0;
-   
-   
-   }
+ ul li a {
+    color: green;
+    text-decoration: none;
+ }
 
-   p {
-       float: left;
-       line-height: 190%;
-   }
+ul li:hover {
+    box-shadow: 0 0 5px #33ffff;
+    box-shadow: 0 0 5px #156666;
+}
+
+
+
+
+
+
+
+
