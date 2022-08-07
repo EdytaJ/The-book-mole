@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-   <!-- Fonyawesome -->
-   <script src="https://kit.fontawesome.com/3b1360d435.js"></script>
-   <!-- Swiper -->
-   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-   <!-- Scroll Reveal -->
-   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <title>Mila, your Yoga teacher</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="assets/css/style.css">
+    <title>Modal window</title>
+  </head>
+  <body>
+    <button class="show_popup">About Vinayasa class</button>
+	<button class="show_popup">About Ashtanga class</button>
+    <button class="show_popup">About Power Yoga class</button>
 
-	<header>
-		<h1>Our website</h1>
-		<form>
-		  <div class="remember">
-			<label for="entername">Enter your name:</label>
-			<input id="entername" type="text" required />
-			<input id="submitname" type="submit" value="Say hello" />
-		  </div>
-		  <div class="forget">
-			<label for="forgetname">Want me to forget you?</label>
-			<input id="forgetname" type="reset" value="Forget" />
-		  </div>
-		</form>
-	  </header>
-	  <main>
-		<p class="personal-greeting">Welcome to our website.</p>
-		<p>
-		  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada, metus ut mollis volutpat, felis est rhoncus turpis, in blandit est risus malesuada dui. Phasellus tempus elit at purus vestibulum suscipit. Donec quis est nec dui pretium venenatis sit amet eu nulla. Donec finibus, ipsum non semper dignissim, massa magna sagittis est, vitae vehicula nunc magna vitae diam. Integer ultrices mauris aliquet arcu tempor, at mattis justo sagittis. Nunc ut nulla et erat viverra tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer vitae bibendum justo. Vestibulum porta velit sit amet libero accumsan fermentum.
-		</p>
-	  </main>
-	  <footer>
-		<p>Copyright nobody. Use the code as you like.</p>
-	  </footer>
+    <div class="popup hidden">
+      <button class="close_popup">&times;</button>
+	  <h1>Vinayasa Class 😍</h1>
+      <p>
+        Let go and flow with Classical Vinyasa. This class links traditional hatha yoga poses into a creative
+        vinyasa flow for a modern take on your movement practice. You’ll move through classes that blend 
+        strong standing poses, core work, backbends, arm balances, and inversions to help you open up 
+        and move you to your fullest expression. By creating heat from within, you’ll purify your body, 
+        melt away tension, and connect to your inner bliss.
+      </p>
+
+
+	  <h1>Ashtanga 😍</h1>
+      <p>
+        Let go and flow with Classical Vinyasa. This class links traditional hatha yoga poses into a creative
+        vinyasa flow for a modern take on your movement practice. You’ll move through classes that blend 
+        strong standing poses, core work, backbends, arm balances, and inversions to help you open up 
+        and move you to your fullest expression. By creating heat from within, you’ll purify your body, 
+        melt away tension, and connect to your inner bliss.
+      </p>
+
+	  <h1>Power Yoga 😍</h1>
+      <p>
+        Let go and flow with Classical Vinyasa. This class links traditional hatha yoga poses into a creative
+        vinyasa flow for a modern take on your movement practice. You’ll move through classes that blend 
+        strong standing poses, core work, backbends, arm balances, and inversions to help you open up 
+        and move you to your fullest expression. By creating heat from within, you’ll purify your body, 
+        melt away tension, and connect to your inner bliss.
+      </p>
+	</div>
+    <div class="overlay hidden"></div>
+
+  
+ <script src="assets/js/script.js"></script>
+  </body>
+</html>
